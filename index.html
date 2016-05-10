@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SAN TechnoSys | Software, Consulting, Insights | Software Development
+        | Web Application Development | Web Hosting(Linux and Windows) | Mobile Application
+        Development in Nasik, Maharashtra, India.</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.png" />
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css" />
+    <!-- Theme color -->
+    <!--<link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">-->
+    <link href="assets/css/theme-color/fountain-blue-theme.css" rel="stylesheet" type="text/css" />
+    <!--<link href="assets/css/theme-color/lite-blue-theme.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href="assets/css/theme-color/bridge-theme.css" rel="stylesheet" type="text/css" />-->
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        #slider .slick-list
+        {
+            height: 500px !important;
+        }
+        .title-area
+        {
+            padding: 0 !important;
+        }
+        .title-area .slick-initialized .slick-slide
+        {
+            height: 150px !important;
+        }
+        .clients-brand-area .slick-prev:before, .clients-brand-area .slick-next:before
+        {
+            color: #000;
+        }
+        .slick-list.draggable p, .slick-list.draggable h6
+        {
+            color: #fff;
+        }
+        @media (max-width:480px )
+        {
+            .main-slider
+            {
+                height: 200px;
+            }
+            .navbar-brand
+            {
+                float: left;
+                font-size: 18px;
+                height: 64px;
+                line-height: 20px;
+                padding: 21px;
+            }
+            .navbar-brand > img
+            {
+                margin-left: -66px;
+            }
+            .slide-article > h2
+            {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- BEGAIN PRELOADER -->
+    <div id="preloader">
+        <div id="status">
+            &nbsp;</div>
+    </div>
+    <!-- END PRELOADER -->
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+    <!-- END SCROLL TOP BUTTON -->
+    <!-- Start header -->
+    <header id="header">
+        <!-- header top search -->
+        <div class="header-top">
+            <div class="container">
+                <form action="">
+                    <div id="search">
+                        <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search" style="display: inline-block;">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- header bottom -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="header-contact">
+                            <ul>
+                                <li>
+                                    <div class="phone">
+                                        <i class="fa fa-phone"></i>
+                                        +91 70404 11019
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mail">
+                                        <i class="fa fa-envelope"></i>
+                                        info@santechnosys.com
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="header-login">
+                            <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Sign Up</a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- Start login modal window -->
+    <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+        <div class="modal-dialog">
+            <!-- Start login section -->
+            <div id="login-content" class="modal-content">
+                <div class="modal-header">
+                    <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                        <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">
+                        <i class="fa fa-unlock-alt"></i>Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="User name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="loginbox">
+                        <label>
+                            <input type="checkbox"><span>Remember me</span></label>
+                        <button class="btn signin-btn" type="button">
+                            SIGN IN</button>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer footer-box">
+                    <a href="#">Forgot password ?</a> <span>No account ? <a id="signup-btn" href="#">Sign
+                        Up.</a></span>
+                </div>
+            </div>
+            <!-- Start signup section -->
+            <div id="signup-content" class="modal-content">
+                <div class="modal-header">
+                    <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                        <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">
+                        <i class="fa fa-lock"></i>Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="form-group">
+                        <input placeholder="Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="signupbox">
+                        <span>Already got account? <a id="login-btn" href="#">Sign In.</a></span>
+                    </div>
+                    <div class="loginbox">
+                        <label>
+                            <input type="checkbox"><span>Remember me</span><i class="fa"></i></label>
+                        <button class="btn signin-btn" type="button">
+                            SIGN UP</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End login modal window -->
+    <!-- BEGIN MENU -->
+    <section id="menu-area">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- LOGO -->
+                    <!-- TEXT BASED LOGO -->
+                    <!--<a class="navbar-brand" href="index.html">SAN TechnoSys</a>-->
+                    <!-- IMG BASED LOGO  -->
+                     <a class="navbar-brand" href="index.html"><img src="assets/images/logo_new.png" alt="logo" /></a> 
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                        <li class ="active"><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="softwaredevelopment.html">Windows/ Web Application Development</a></li>
+                                <li><a href="mobileapplicationdevelopment.html">Mobile Application Development</a></li>
+                                <li><a href="softwaretesting.html">Software Testing and Quality Assurance Services</a></li>
+                                <li><a href="websitedesign.html">Website Design and Development</a></li>
+                                <li><a href="websitehosting.html">Website Hosting Services(Linux & Windows)</a></li>
+                                <li><a href="technicalsupport.html">Technical Support</a></li>
+                                <li><a href="graphicsdesign.htm">Graphics Design</a></li>
+                                <li><a href="industrialtraining.html"> Industry's Employee Training Program</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a href="portfolio.html">Portfolio</a></li>-->
+                        <li><a href="career.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+             
+                <a href="#" id="search-icon">
+                    <i class="fa fa-search">
+                    </i>
+                </a>
+            </div>
+        </nav>
+    </section>
+    <!-- END MENU -->
+    <!-- Start slider -->
+    <section id="slider">
+    <div class="main-slider">
+      <div class="single-slide">
+        <img src="assets/images/slider-1.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Software Development</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">Windows/ Web Application Development, Mobile Application Development</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <!--<img src="assets/images/person1.png" alt="business man">-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="single-slide">
+        <img src="assets/images/slider-1.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"> Software Testing and Quality Assurance Services</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">Maintain quality across the entire product development life-cycle</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <!--<img src="assets/images/person2.png" alt="business man">-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+
+      <div class="single-slide">
+        <img src="assets/images/slider-1.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Website Design and Development</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">Interactive and Responsive Web Design and Development.</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <!--<img src="assets/images/person2.png" alt="business man">-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+      
+      <div class="single-slide">
+        <img src="assets/images/slider-1.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Website Hosting Services(Linux & Windows)</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">Linux and Windows Server Services and Support.</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <!--<img src="assets/images/person2.png" alt="business man">-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+
+      <div class="single-slide">
+        <img src="assets/images/slider-1.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Technical Support</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s"> We are with you 24x7. </p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <!--<img src="assets/images/person2.png" alt="business man">-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="single-slide">
+        <img src="assets/images/slider-1.jpg" alt="img">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h2 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">SEO, Graphics design & Other</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s"> Search Engine Optimisation, Logo Design, Website Redesign, Website Maintenance. </p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <!--<img src="assets/images/person2.png" alt="business man">-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </section>
+    <!-- End slider -->
+    <!-- Start Feature -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-area">
+                        <h2 class="title" style="font-size:25px;">Welcome to SAN TechnoSys LLP</h2>
+                        <!--<span class="line"></span>-->
+                        <p>SAN TechnoSys is a leading IT Service provider based in Nasik, where We have focused mainly on giving services 
+                        of Web Application Development, Mobile Application Development and Web Hosting(Linux and Windows). We have the intelligence
+                         to the state of the art website design and development of cutting edge technology. We specialize in developing simple to 
+                         complex web applications at affordable prices. We use our expertise and experience to provide the best quality IT services. 
+                         We have highly experienced and professional team members who combine innovative and creative designs amazingly to produce application 
+                         that are not only attractive and eye catching but also customer appealing and informative. We are appreciative to provide you the powerful 
+                         and easily configurable management of interactive services. We can surely satisfy your need with our advanced designs and ideas. We expertly 
+                         design sites that can convert your visitor into customer. We utilizes the latest technologies to deliver top notch IT services which are completely 
+                         customer centric, standing on the expectations of our clients and giving a competitive edgy application to beat the heat of online business platform,
+                         When you choose SAN TechnoSys, you choose quality, professionalism, dedication...!!!</p>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <section id="counter">
+                    <div class="counter-overlay">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="counter-area">
+                                        <div class="row">
+                                            <!-- Start single counter -->
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="single-counter">
+                                                    <div class="counter-icon">
+                                                        <i class="fa fa-suitcase"></i>
+                                                    </div>
+                                                    <div class="">
+                                                        100+
+                                                    </div>
+                                                    <div class="counter-label">
+                                                        Worldwide Employee
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End single counter -->
+                                            <!-- Start single counter -->
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="single-counter">
+                                                    <div class="counter-icon">
+                                                        <i class="fa fa-clock-o"></i>
+                                                    </div>
+                                                    <div class="">
+                                                        25%
+                                                    </div>
+                                                    <div class="counter-label">
+                                                        R&D on
+                                                        New Technologies
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End single counter -->
+                                            <!-- Start single counter -->
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="single-counter">
+                                                    <div class="counter-icon">
+                                                        <i class="fa fa-trophy"></i>
+                                                    </div>
+                                                    <div class="">
+                                                        90%
+                                                    </div>
+                                                    <div class="counter-label">
+                                                        Repeat
+                                                        Customers
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End single counter -->
+                                            <!-- Start single counter -->
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="single-counter">
+                                                    <div class="counter-icon">
+                                                        <i class="fa fa-users"></i>
+                                                    </div>
+                                                    <div class="">
+                                                        100%
+                                                    </div>
+                                                    <div class="counter-label">
+                                                        Focus on
+                                                        Agile and DevOps
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End single counter -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    <!-- End Feature -->
+    <!-- Start Clients brand -->
+    <section id="clients-brand">
+     <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="title-area">
+                <h2 style="font-size:25px;margin-bottom:45px" class="title">Technology Expertise</h2>                
+                    <div class="clients-brand-area">
+                        <ul class="clients-brand-slide">
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                <img src="assets/images/Technology/dotnet.jpg" />                                    
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/android.png" />
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/angularjs.jpg" />
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                  <img src="assets/images/Technology/audingo.png" />
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/azure.jpg" />
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/bootstrap.png" />
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/amazon.jpg" />
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/dynamics.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/dropbox.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/facebook.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/google.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/googleanlytics.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/heroku.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/intacct.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/ios8.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/javaee.png" />
+                                </div>
+                            </li>                           
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/jquery.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/linkedin.jpg" />
+                                </div>
+                            </li>                           
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/mongodb.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/mysql.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/nexonia.png" />
+                                </div>
+                            </li> 
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/nodejs.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/oracle.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/php.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/redis.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/ruby.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/salesforce.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/sap.jpg" />
+                                </div>
+                            </li> 
+                            <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/sendgrid.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/spring.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/sqlserver.jpg" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/twilio.png" />
+                                </div>
+                            </li>
+                             <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/watson.png" />
+                                </div>
+                            </li>
+                              <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/web.jpg" />
+                                </div>
+                            </li>
+                              <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/workday.gif" />
+                                </div>
+                            </li>
+                              <li class="col-md-3">
+                                <div class="single-brand">
+                                    <img src="assets/images/Technology/zapier.png" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Clients brand -->
+    <!-- Start Testimonial section -->
+    <section id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-area">
+                <h2 class="title">Whats Client Say</h2>
+                <span class="line"></span>           
+              </div>
+            </div>
+            <div class="col-md-12">
+              <!-- Start testimonial slider -->
+              <div class="testimonial-slider">
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/testi1.jpg" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>SAN came to us last year, at a time when our previous development partner had left us in very bad shape. At a time, where we were 
+                    looking for a new partner to trust, SAN delivered above expectations. They immediately came in with the professionalism and expertise to quickly 
+                    get a buggy system back in control and we have always been surprised by their care and attention to details. Their team has always been flexible and 
+                    even willing to come in on a weekend when there is a need. 
+                     No matter the challenge, they have consistently delivered on-time and on-budget.</p>
+                    <h6>Paul Forsyth, <span>USA</span></h6>
+                  </div>
+                </div>
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/testi3.jpg" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+SAN TechnoSys has helped us expand our business and profit by using modern forms of web technologies. 
+From custom CMS solutions, to social media integration, Netwin has helped us grow tremendously. 
+We have been working with SAN for the past one years. Every project has been completed in a timely fashion, and the clients are always pleased</p>
+                    <h6>John Dow, <span>USA</span></h6>
+                  </div>
+                </div>
+                <!-- Start single slider -->
+                <div class="single-slider">
+                  <div class="testimonial-img">
+                    <img src="assets/images/testi2.jpg" alt="testimonial image">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>The SAN TechnoSys team was very smart, flexible, professional and well understanding.
+                     The results are outstanding and would definitely work with them again. Highly Recommended!</p>
+                    <h6>Michel D., <span>Italy</span></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6"></div>        
+      </div>
+    </div>
+  </section>
+    <!-- End Testimonial section -->
+    <!-- Start subscribe us -->
+    <section id="subscribe" style="display: none">
+        <div class="subscribe-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="subscribe-area">
+                            <h2 class="wow fadeInUp">Subscribe Newsletter</h2>
+                            <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                                <input type="text" placeholder="Enter Your E-mail..">
+                                <button class="subscribe-btn" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End subscribe us -->
+    <!-- Start footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-left">
+                        <p>
+Copyright © 2016, <a href="http://www.santechnosys.com/">SAN TechnoSys.</a> All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-right">
+                        <a href="index.html"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <!-- hitwebcounter Code START -->
+             <!--  <a href="http://www.hitwebcounter.com" target="_blank">
+                    <img src="http://hitwebcounter.com/counter/counter.php?page=6373375&style=0005&nbdigits=5&type=page&initCount=1000" title="IP Address" alt="IP Address" border="0">
+                </a>                                        <br />
+               
+                    <strong>Page Views</strong>
+                </a>   -->
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <!-- mixit slider -->
+    <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+    <!-- counter -->
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.js"></script>
+    <!-- Wow animation -->
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+    <!-- progress bar   -->
+    <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>
